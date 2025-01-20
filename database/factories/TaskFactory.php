@@ -17,7 +17,7 @@ class TaskFactory extends Factory
     public function definition(): array
     {
         return [
-            'title' => fake()->title(),
+            'title' => fake()->text(50),
             'description' => fake()->text(200),
             'status' => fake()->randomElement(\App\Enums\TaskStatus::cases()),
             'due_date' => fake()->dateTimeThisYear('now')
