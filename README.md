@@ -33,6 +33,7 @@ npm run dev
 ```
 ```bash
 composer install
+php artisan migrate
 php artisan serve
 ```
 
